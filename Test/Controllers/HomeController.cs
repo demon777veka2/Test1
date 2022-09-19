@@ -21,9 +21,6 @@ namespace Test.Controllers
         public IActionResult Index()
         {
             return View();
-        }  public IActionResult Indexx()
-        {
-            return View();
         }
 
         public IActionResult Privacy()
@@ -33,6 +30,16 @@ namespace Test.Controllers
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Error2()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Error3()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
