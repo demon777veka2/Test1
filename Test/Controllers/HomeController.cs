@@ -21,14 +21,7 @@ namespace Test.Controllers
         public IActionResult Index()
         {
             return View();
-        } 
-        
-        public IActionResult Indexx()
-        {
-            return View();
-        }
-
-        public IActionResult Indexx2()
+        }  public IActionResult Indexx()
         {
             return View();
         }
