@@ -33,11 +33,6 @@ namespace Test.Controllers
             return View();
         }
 
-        public IActionResult Indexx2()
-        {
-            return View();
-        }
-
         public IActionResult Privacy()
         {
             return View();
